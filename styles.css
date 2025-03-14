@@ -38,3 +38,32 @@ p {
 button {
   margin: 20px;
 }
+img {
+    margin: 10px;
+    border: 5px solid #555;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selected {
+    border: 5px solid rgb(0, 195, 255);
+}
+
+h3, p {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
