@@ -1,4 +1,3 @@
-//your code here
 const imageContainer = document.getElementById("image-container");
 const resetButton = document.getElementById("reset");
 const verifyButton = document.getElementById("verify");
@@ -22,11 +21,11 @@ images = images.sort(() => Math.random() - 0.5);
 
 let selectedImages = []; // Store clicked images
 
-// Display images dynamically
+// Display images dynamically with unique classes
 images.forEach((src, index) => {
     const img = document.createElement("img");
     img.src = src;
-    img.classList.add("image");
+    img.classList.add("img" + (index + 1));  // Assign class img1, img2, etc.
     img.dataset.index = index;
 
     img.addEventListener("click", () => selectImage(img));
